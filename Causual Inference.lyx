@@ -1,0 +1,1467 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Learning notes for Causual Inference
+\end_layout
+
+\begin_layout Section
+Research Questions (EP.2)
+\end_layout
+
+\begin_layout Standard
+Answer some sort of question that you are interested in.
+\end_layout
+
+\begin_layout Standard
+how do we konw if we have a good question when it comes to empirical quantitativ
+e research:
+\end_layout
+
+\begin_layout Subsection
+find the right data (What) for the theory (Why): 
+\end_layout
+
+\begin_layout Enumerate
+have a theory: think about how the world works.
+ That's the 'Why' about the question, the reason why a specific phenomenon
+ happens.
+\end_layout
+
+\begin_layout Enumerate
+find data: the data is about 'What', it shows what the truth look like,
+ but doesn't answer the question about 'why'.
+ there is a intermedia procedure about how to using the data (truth) to
+ answer/controdict the theory.
+\end_layout
+
+\begin_layout Enumerate
+correlation doesn't derive causuality: sometimes the data shows the correlation,
+ but there is no causuality between the variables, or there is exists causuality
+ in a reverse direction.
+\end_layout
+
+\begin_layout Subsection
+Feasibility
+\end_layout
+
+\begin_layout Standard
+If it is possible to work on the experiment for the question.
+\end_layout
+
+\begin_layout Standard
+The scale, the time, the fund.
+\end_layout
+
+\begin_layout Subsection
+Design
+\end_layout
+
+\begin_layout Standard
+Make it simple.
+ If there is a big masive question, carve up with a little chunk of it.
+\end_layout
+
+\begin_layout Subsection
+Think beforehand: before getting too deep
+\end_layout
+
+\begin_layout Standard
+If the thing you are doing:
+\end_layout
+
+\begin_layout Enumerate
+will actually answer the research question you have.
+\end_layout
+
+\begin_layout Enumerate
+will the research question you have will actually answer the theory.
+\end_layout
+
+\begin_layout Section
+Types of Variables (EP3)
+\end_layout
+
+\begin_layout Standard
+How to describe the variables.
+ Summarize what the whole data set looks like.
+\end_layout
+
+\begin_layout Subsection
+Continuous variables
+\end_layout
+
+\begin_layout Standard
+take any value in any certain range.
+\end_layout
+
+\begin_layout Subsection
+Count variables
+\end_layout
+
+\begin_layout Standard
+Count from 0 to the number of counts.
+\end_layout
+
+\begin_layout Subsection
+Ordinal data
+\end_layout
+
+\begin_layout Standard
+There is an order relationship between different value of the variable,
+ but the quantitative relationship could be difficult to measure (or doesn't
+ exist).
+\end_layout
+
+\begin_layout Subsection
+Categorical variables
+\end_layout
+
+\begin_layout Standard
+Values in different categories but without order.
+ The are just different values.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Binary variables:
+\series default
+ Only two values for a specific variable.
+\end_layout
+
+\begin_layout Subsection
+Qualitative variables
+\end_layout
+
+\begin_layout Standard
+The variables that can't be reppresented mathematically.
+\end_layout
+
+\begin_layout Standard
+For example: text on newspapers.
+\end_layout
+
+\begin_layout Section
+Summarizing the Variables (EP4)
+\end_layout
+
+\begin_layout Standard
+Tell the other one what the data looks like.
+\end_layout
+
+\begin_layout Subsection
+Distribution
+\end_layout
+
+\begin_layout Standard
+How often different values tend to occur.
+\end_layout
+
+\begin_layout Subsubsection
+Categorical variables
+\end_layout
+
+\begin_layout Standard
+List the different cotegories, and compute the percentage for the whole
+ data set.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example for the distribution table for categorical data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig3_1.png
+	width 12cm
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Continous Variables
+\end_layout
+
+\begin_layout Standard
+Can use the same method of percentage shown in Categorical varialbe.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Histogram:
+\series default
+ convert into categorical, cut the range of the values into bins.
+ The number of bins can be set very small, when there are infinite bins,
+ it becomes density distribution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example for Histogram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Fig3_2.png
+	width 8cm
+	height 8cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Statistics
+\end_layout
+
+\begin_layout Subsubsection
+Mean based statistics
+\end_layout
+
+\begin_layout Standard
+The average.
+ 
+\end_layout
+
+\begin_layout Standard
+A central tendency: a single value intended to describe a representative
+ 'center' for the distribution.
+\end_layout
+
+\begin_layout Standard
+Standard deviation
+\end_layout
+
+\begin_layout Standard
+Variance
+\end_layout
+
+\begin_layout Standard
+Skew 
+\end_layout
+
+\begin_layout Subsubsection
+Percentile based statistics
+\end_layout
+
+\begin_layout Standard
+The specific value that a certain propotion of data is below it.
+\end_layout
+
+\begin_layout Standard
+Median: the 50 percentile.
+\end_layout
+
+\begin_layout Section
+Theoretical Distributions (EP5)
+\end_layout
+
+\begin_layout Standard
+Use the data we have to learn about the whole world (population, the data
+ generating process, etc.
+ whatever the name is).
+\end_layout
+
+\begin_layout Section
+Conditional Distribution (EP6)
+\end_layout
+
+\begin_layout Section
+Line Fitting (EP7)
+\end_layout
+
+\begin_layout Section
+Difference-in-Difference
+\end_layout
+
+\begin_layout Subsection
+How does it work
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Event study:
+\series default
+ use before-treatment information to construct a counterfactual after-treatment
+ untreated prediction.
+ (1 group)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Diff-in-diff:
+\series default
+ brings in another group that is never treated.
+ (2 groups)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Definition: 
+\series default
+why called diff-in-diff ?
+\end_layout
+
+\begin_layout Itemize
+difference: isolate the within variation for both the treated group and
+ untreated group.
+ This is the procedure that controlling for the group difference.
+\end_layout
+
+\begin_layout Itemize
+in difference: Compare the within variation in the treated group to the
+ with variation in the untreated group.
+ doing this comparison controls for time differences.
+ (the 'difference' in those differences)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Procedure:
+\end_layout
+
+\begin_layout Standard
+(treated group after - treated group before) - (untreated group after -
+ untreated group before)
+\end_layout
+
+\begin_layout Standard
+The change in the untreated group represents how much we would have expexcted
+ in the treated group if no treatment had occurred.
+ So any additional change beyond that amount must be the effect of the treatment.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hint:
+\end_layout
+
+\begin_layout Standard
+If the time effect is huge (untreated group after - untreated group before),
+ we have to wonder if that huge time effect will affect the treated group
+ and untreated group differrently.
+\end_layout
+
+\begin_layout Subsubsection
+What do we need in a untreated group?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Parallel trends assumption:
+\series default
+ If no treatment had occurred, the difference between the treated group
+ and the untreated group would have stayed the same in the post-treatment
+ period as it was in the pre-treatment period.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The principle of diff-in-diff:
+\series default
+ use the change in the untrated group to represent all non-treatment changes
+ in the treated group.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The mathematical form of DiD procedure:
+\end_layout
+
+\begin_layout Itemize
+difference between pre-treatment and post-treatment in the treated group:
+ 
+\shape italic
+EffectofTreatment + OtherTreatedGroupChanges
+\end_layout
+
+\begin_layout Itemize
+difference between pre-treatment and post-treatment in the untreated group:
+ 
+\shape italic
+OtherUntreatedGroupChanges
+\end_layout
+
+\begin_layout Itemize
+diff-in-diff, just subtracts the first part by the second part above: 
+\shape italic
+EffectofTreatment + OtherTreatedGroupChanges - OtherUntreatedGroupChanges
+\end_layout
+
+\begin_layout Standard
+The purpose for DiD is to find the 
+\shape italic
+EffectofTreatment
+\shape default
+ term, so it is important to make sure that 
+\shape italic
+OtherTreatedGroupChanges - OtherUntreatedGroupChanges = 0.
+ 
+\shape default
+The assumption of parallel trend make sure this will come true.
+ This is what parallel trend really want to do.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Good properties to check if the DiD design (untreaded group design) is believabl
+e:
+\end_layout
+
+\begin_layout Itemize
+there's no particular reason to believe the untreated group would suddenly
+ change around the time of treatment.
+ If not satisfied (something obviously changing in the untreated group at
+ the same time), DiD will mix up with the effects of the treatment and whatever
+ was changing in the untreated group.
+\end_layout
+
+\begin_layout Itemize
+the treated group and untreated groups are generally similar in many ways.
+\end_layout
+
+\begin_layout Itemize
+the treated group and untreated groups had similar trajectories for the
+ dependent variable before treatment.
+ —-We may want to look for an untreated group that has a similar trajectory
+ for the dependent variable before treatment.
+ That is.
+ the outcome variable was growing or shrinking at about the same rate in
+ both the treated and untreated groups in the pre-treatment period.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Test if the chosen untreated group is appropriate:
+\end_layout
+
+\begin_layout Itemize
+Prior trends: to see wether the treated and untreated groups were trending
+ similarly before treatment.
+ —- find the trends weren't identical doesn't necessarily disprove that
+ DiD works for the instance, but it is necessary to explain why the set
+ up is still available even though the prior trends test is not passed.
+ 
+\end_layout
+
+\begin_layout Itemize
+Placebo test: using the data before treatment as the whole data set, set
+ several time point that we pretend that it was the treatment time, do the
+ DiD procedure as usual, to see if there is a 'DiD effect' at the pretend
+ treatment dates.
+ —- if there exists 'DiD effect' for pretend treatment dates, something
+ might wrong with the set up.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hint: we have to think very carefully about how our dependent variable is
+ measured and transformed.
+
+\series default
+ —- For example, a dependent variable with logarithm transformation.
+ If parallel trends holds for dependent variable Y, it doesn't hold for
+ ln(Y) and vice versa.
+\end_layout
+
+\begin_layout Subsection
+How is it Performed?
+\end_layout
+
+\begin_layout Subsubsection
+Two-Way Fixed Effects
+\end_layout
+
+\begin_layout Standard
+Description: two-way fixed effects, or TWFE, want to control for group and
+ time differences.
+\end_layout
+
+\begin_layout Standard
+The classic approach to estimating difference-in-differences: control for
+ group differences and time differences
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Y = 
+\backslash
+alpha_g + 
+\backslash
+alpha_t + 
+\backslash
+beta_1Treated + 
+\backslash
+epsilon$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha_g$
+\end_layout
+
+\end_inset
+
+ is a set of fixed effectes for the group (just 'Treated' or 'Untreated'
+ in the simplest form, there may be a bit more complicated for other cases.).
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha_t$
+\end_layout
+
+\end_inset
+
+ is a set of fixed effects for the time period (just 'before treatment'
+ and 'after treatment' in the simplest form.).
+ The 'Treated' is a binary variable indicating that you are being treated
+ right now (if you are in a treated group in the after-treatment period),
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_1$
+\end_layout
+
+\end_inset
+
+ is the diff-in-diff effect.
+\end_layout
+
+\begin_layout Paragraph
+Get more control variables:
+\end_layout
+
+\begin_layout Itemize
+control variables that vary over group but don't change over time are 
+\series bold
+unnecessary
+\series default
+ and would drop out - we already have group fixed effects.
+\end_layout
+
+\begin_layout Itemize
+the time varying control variables should be well thought since the parallel
+ trend assumption only holds on some variables.
+ The inclusion of time-varying controls imposes some statistical problems
+ related to 
+\shape italic
+whether those controls impact treated and untreated similarly, and the assumptio
+n that treatment doesn't affect later values of covariates.
+
+\shape default
+ —- There is a possible case that the untreated group dropped relative to
+ treatment because some predictor 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$W$
+\end_layout
+
+\end_inset
+
+ unrelated treatment just happened to drop at the same time treatment went
+ into effect.
+\end_layout
+
+\begin_layout Standard
+It's often a good idea to show your results both with and without covariates
+ if you need to include covariates.
+\end_layout
+
+\begin_layout Paragraph
+Another form of the simplest diff-in-diff:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Y = 
+\backslash
+beta_0 + 
+\backslash
+beta_1TreatedGroup + 
+\backslash
+beta_2AfterTreatment + 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+beta_3TreatedGroup 
+\backslash
+times AfterTreatment + 
+\backslash
+epsilon$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+'TreatedGroup' is the indicator for if this is the treated group no matter
+ before or after treatment.
+ 'AfterTreatment' is the indicator for if you are in the 'post'-treatment
+ period no matter for treated group or untreated group.
+ The interaction term indicates the treated group in the post-treatment
+ time period, which is equivalent to the 'Treated' term in the previous
+ equation, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hat{
+\backslash
+beta_3}$
+\end_layout
+
+\end_inset
+
+ is the diff-in-diff estimator.
+\end_layout
+
+\begin_layout Standard
+The interaction version is more attractive since we can calculate how much
+ bigger the treated/untreated gap grows after implement the treatment.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Advantages of TWFE:
+\end_layout
+
+\begin_layout Itemize
+it is highly intuitive - we want to control for group and time differences,
+ so we do exactly that.
+\end_layout
+
+\begin_layout Itemize
+lt also lets us account for multi-group designs where we have multiple groups,
+ some of which are treated and some are not, rather than just one treated
+ and untreated group.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Disadvantages of TWFE:
+\end_layout
+
+\begin_layout Itemize
+it doesn't work well for 'rollout designs', also known as 'staggered treatment
+ timing', where the treatment is applied at different times to different
+ groups.
+ (but if you have a single treatment period, TWFE can be an easy way to
+ estimate diff-in-diff).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Codes for TWFE:
+\series default
+ see in the corresponding chapter in The effect.
+\end_layout
+
+\begin_layout Subsubsection
+Treatment Effects in Diff-in-Diff
+\end_layout
+
+\begin_layout Standard
+The estimate that standard diff-in-diff gives us is all about how effective
+ the treatment was for the groups that actually got it.
+ But if the untreated group would have been affected differently, we have
+ no way of knowing that.
+\end_layout
+
+\begin_layout Enumerate
+Diff-in-diff compares what we see for the treated group after treatment
+ against our best guess at what the treatment group would have been withoud
+ treatment.
+\end_layout
+
+\begin_layout Enumerate
+We are getting an average treatment effect among that group.
+ In other words it's the 
+\begin_inset Quotes eld
+\end_inset
+
+average treatment on the treated
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Supporting the Parallel Trends Assumption
+\end_layout
+
+\begin_layout Paragraph
+Prior Trends test
+\end_layout
+
+\begin_layout Standard
+Definition review: test whether the treated and untreated groups already
+ had differing trends in the leadup to the period where trendment occurred.
+\end_layout
+
+\begin_layout Standard
+There are two ways to actually perform prior trend test:
+\end_layout
+
+\begin_layout Enumerate
+Graph the average outcomes over time in the pre-treatment period and see
+ if they look different.
+\end_layout
+
+\begin_layout Enumerate
+perform a statistical test to see if the trends are different, and if so,
+ how much different.
+ The simplest form uses the regression model: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Y=
+\backslash
+alpha_g + 
+\backslash
+beta_1 Time + 
+\backslash
+beta_2 Time 
+\backslash
+times Group + 
+\backslash
+epsilon$$
+\end_layout
+
+\end_inset
+
+ Estimated using only data from before the treatment period, where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_2Time 
+\backslash
+times Group$
+\end_layout
+
+\end_inset
+
+ allows the time trend to be different for each group.
+ A test of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_2 = 0$
+\end_layout
+
+\end_inset
+
+ provides information on whether the trends are different.
+\end_layout
+
+\begin_layout Standard
+Don't just use the significance test to answer the question.
+ If there is a significant difference occurred, further check the reason
+ why it happened (are the trends barely different, but the difference is
+ statistically significant because of a large sample? are the trends different
+ because they were mostly consistent with each other but there was a brief
+ period of deviation a few years back?)
+\end_layout
+
+\begin_layout Paragraph
+Misunderstanding of approaches when failing a prior trends test:
+\end_layout
+
+\begin_layout Itemize
+see it as a reason to add 'controls for trends' to salvage their research
+ design by including the Time varible in theis diff-in-diff model directly,
+ rather than the time fixed effects 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha_t$
+\end_layout
+
+\end_inset
+
+.
+ —- this can have the unfortunate effect of controlling away some of the
+ actual treatment effect, especially for treatments with effects that get
+ stronger or weaker over time.
+\end_layout
+
+\begin_layout Itemize
+control only for prior trends, sort of like running an event study for the
+ treated and untreated groups.
+ —- this can make things worse in its own way unless it's done precisely.
+\end_layout
+
+\begin_layout Paragraph
+Placebo test
+\end_layout
+
+\begin_layout Standard
+Definition review: 
+\end_layout
+
+\begin_layout Standard
+Good ways of evaluating untestable assumptions in a number of different
+ research designs, not just diff-in-diff.
+\end_layout
+
+\begin_layout Paragraph
+Steps for diff-in-diff Placebo test:
+\end_layout
+
+\begin_layout Enumerate
+Use ony the data that came before the treatment went into effect.
+\end_layout
+
+\begin_layout Enumerate
+Pick a fake treatment period.
+ (It could be a specific alternative that makes sense, or it could be at
+ random, or you could try a BUNCH of random treatment periods and see where
+ the true treatment fits in the sampling distribution of the fake effect.
+ This latter approach is called “randomization inference.’’)
+\end_layout
+
+\begin_layout Enumerate
+Estimate the same diff-in-diff model you were planning to use, but create
+ the 'Treated' variable as equl to 1 if you're in the treated group and
+ after the fake treatment date you pick.
+\end_layout
+
+\begin_layout Enumerate
+If you find a 'effect' for that treatment date where there really shouldn't
+ be one, that's evidence that there's something wrong with your design,
+ which may imply a violation of parallel trends.
+\end_layout
+
+\begin_layout Paragraph
+Another way to do placebo test when have multiple untreated groups:
+\end_layout
+
+\begin_layout Standard
+not common since it doesn't address parallel trends quite as directly (and
+ it's not really a problem if parallel trends fails among your untreated
+ groups, it is only important among untreated and treated)
+\end_layout
+
+\begin_layout Enumerate
+Use all of the data, but drop the data from the treated groups.
+\end_layout
+
+\begin_layout Enumerate
+Assign different untreated groups to be fake treated groups, and estimate
+ the DID effect for them.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Code for Placebo test:
+\series default
+ see in the corresponding section in 
+\shape slanted
+The effect
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Long-Term Effects
+\end_layout
+
+\begin_layout Standard
+The Two-Way diff-in-diff just find the treatment effect in 2 big buckets:
+ 'before' and 'after', which will lose a lot useful information in each
+ bucket (the effect may taking a while to work, or fading out after treatment).
+ There is a existing model called 
+\series bold
+Dynamic treatment effects
+\series default
+ to work it out.
+\end_layout
+
+\begin_layout Standard
+A common way of doing dynamic treatment effects:
+\end_layout
+
+\begin_layout Enumerate
+generate a centered time variable, which is just the original time variable
+ minus the treatment period.
+ (the time in the last period before treatment is t=0, the first period
+ with treatment implemented is t=1, the second-to-last period before treatment
+ is t=-1).
+\end_layout
+
+\begin_layout Enumerate
+interact the Treatment variable with a set of binary indicator variables
+ for each of the time periods: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Y = 
+\backslash
+alpha_g + 
+\backslash
+alpha_t +
+\backslash
+beta_{-T}Treated + 
+\backslash
+beta_{-T_1}Treated + 
+\backslash
+beta_{-(T_1-1)}Treated + ...
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++ 
+\backslash
+beta_{-1}Treated + 
+\backslash
+beta_{1}Treated + 
+\backslash
+beta_{T_2}Treated + 
+\backslash
+epsilon$$
+\end_layout
+
+\end_inset
+
+where there are 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T_1$
+\end_layout
+
+\end_inset
+
+ periods before the treatment period, and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T_2$
+\end_layout
+
+\end_inset
+
+ periods afterwards.
+ Do note that there's no 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_0$
+\end_layout
+
+\end_inset
+
+ coefficient for the last period before treatment here - that needs to be
+ dropped or else you get perfect 
+\series bold
+multicollinearity
+\series default
+, the design matrix for regression will not be full rank (since the columns
+ will be linear correlated for the indicators).
+\end_layout
+
+\begin_layout Standard
+Two advantages for the setup:
+\end_layout
+
+\begin_layout Enumerate
+shouldn't find effects among the before-treatment coefficients 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_{-T}, 
+\backslash
+beta_{-T_1}, ...
+ 
+\backslash
+beta_{-1}$
+\end_layout
+
+\end_inset
+
+.
+ These should be close to zero and insignificant if doing statistical significan
+ce testing (this is kind of placebo test).
+ It gives diff-in-diff an opportunity to find an effect before it should
+ be there.
+\end_layout
+
+\begin_layout Enumerate
+the after-treatment coefficients 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_1, ...
+ , 
+\backslash
+beta_{T_2}$
+\end_layout
+
+\end_inset
+
+ show the diff-in-diff estimated effect in the relevant period: the effect
+ one period after treatment is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_1$
+\end_layout
+
+\end_inset
+
+ and so on.
+\end_layout
+
+\begin_layout Standard
+The approach is additionally easy to implement with a good interaction term.
+ Just generate a 'time' variable and interact it with the 'treated' indicator.
+\end_layout
+
+\begin_layout Standard
+Highlight when using a dynamic diff-in-diff:
+\end_layout
+
+\begin_layout Enumerate
+each period's effect estimate in the dynamic treatment effects approach
+ relies mostly on data from that one period (while regular diff-in-diff
+ takes advantage of all the data in the entire 'after' period to estimate
+ the effect).
+ so the estimates can be regard as less precision, the confidence interval
+ may exclude 0 in the overall diff-in-diff estimate but don't do so here
+ (ie.
+ the overall effect is statistically significant but the individual-period
+ effects aren't).
+\end_layout
+
+\begin_layout Enumerate
+the interpretation of the effects is always based on the omitted time-0
+ effect.
+ If the omitted time-0 effect is the last period before treatment, then
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_2$
+\end_layout
+
+\end_inset
+
+ means the effect 2 periods after treatment is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_2$
+\end_layout
+
+\end_inset
+
+ higher than the effect in the last period before treatment.
+ Although the effect should be 0 before treatment, it will cause problem
+ if there was effect that time and you interpreted the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_2$
+\end_layout
+
+\end_inset
+
+ as the effect on 2 periods after treatment.
+\end_layout
+
+\begin_layout Enumerate
+present the results from a dynamic estimate like this is usually graphically.
+ With time across the x-axis, and with the diff-in-diff estimates and (usually)
+ a confidence interval on the y-axis.
+ This give a glance much easier than a table how the effect evolves over
+ time, and how close to 0 those pre-treatment effects are.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Code for dynamic diff-in-diff:
+\series default
+ see in corresponding section in 
+\shape italic
+The Effect
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hint:
+\series default
+ a single dynamic effect behaving badly isn’t a reason to throw out the
+ whole model or anything, especially when the deviation is fairly small
+ in its actual value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The visualization of dynamic diff-in-diff example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename dynamic diff in diff visualization example.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Rollout Designs and Multiple Treatment Periods
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Definition:
+\series default
+ find the treatment effects for the groups get treated at different times.
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+The practical problem of just assembling a bunch of TWFEs:
+\end_layout
+
+\begin_layout Standard
+From a research deisgn perspective: no problem, you're just tossing a bunch
+ of valid diff-in-diff designs together.
+ 
+\end_layout
+
+\begin_layout Standard
+But from a statistical perspective, this makes our two-way fixed effects
+ regression not work any more.
+ The problem can actually so bad that, in some rare cases, you can get a
+ negative diff-in-diff estimate even inf the true effect is positive for
+ everone in the sample.
+\end_layout
+
+\begin_layout Paragraph
+Why the two-way fixed effects work when we have multiple treatment periods:
+\end_layout
+
+\begin_layout Itemize
+This setup leads already-treated groups to get used as an untreated group.
+\end_layout
+
+\begin_layout Itemize
+For the trouditional two-way fixed effect, parallel trend assumption believe
+ that the within-group variation in the untreated group and the treated
+ group is the same (so the treatment effect left when subtracting the post-befor
+e diff of treated group and untreated group, the within-group variation
+ just elinimated).
+\end_layout
+
+\begin_layout Itemize
+But for the multiple treatment periods case, the parallel trend assumption
+ will not hold because the treatment is not in a same time.
+ If you have a treatment effect that gets stronger over time, for example
+ (the dynamic diff-in-diff example), then the 'treated comparison group'
+ should be trending upwards over time in a way that the 'just now treated
+ group' shouldn't.
+ Parallel trends breaks and the identification fails.
+\end_layout
+
+\begin_layout Paragraph
+What should we do: 
+\end_layout
+
+\begin_layout Standard
+If using a balanced panel and not using control panel: Goodnam-Bacon decompositi
+on, as described in Goodman-Bacon(2018).
+ The decomposition shows how much weight the just-treated vs.
+ already-treated comparisons are getting relative to the cleaner treated
+ vs.
+ untreated comparisons.
+ The decomposition can be performed in R or Stata using their respective
+ 
+\series bold
+bacondecomp
+\series default
+ packages.
+\end_layout
+
+\begin_layout Subsection
+How the Pros Do It
+\end_layout
+
+\begin_layout Subsubsection
+Doing Multiple Treatment Periods Right
+\end_layout
+
+\end_body
+\end_document
